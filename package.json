@@ -1,0 +1,26 @@
+{
+  "name": "create-neon",
+  "version": "0.1.0",
+  "description": "Create Neon projects with zero configuration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-neon": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neon-bindings/create-neon.git"
+  },
+  "keywords": [
+    "Neon",
+    "Rust"
+  ],
+  "author": "David Herman <david.herman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neon-bindings/create-neon/issues"
+  },
+  "homepage": "https://github.com/neon-bindings/create-neon#readme"
+}
