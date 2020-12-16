@@ -4,10 +4,13 @@
   "description": "Create Neon projects with zero configuration.",
   "main": "index.js",
   "scripts": {
+    "build": "npm run cargo -- build --release",
+    "cargo": "node neon-cargo -o $npm_package_name=index.node --",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-neon": "./index.js"
+    "create-neon": "index.node"
   },
   "repository": {
     "type": "git",

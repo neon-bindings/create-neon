@@ -1,1 +1,7 @@
 node_modules
+index.node
+
+# Added by cargo
+
+/target
+Cargo.lock
