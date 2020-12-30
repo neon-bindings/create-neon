@@ -26,8 +26,13 @@ function processCargoBuildLine(line) {
     }
 
     const outputFile = outputFiles[data.target.name];
+    const { kind } = data.target;
 
     if (!outputFile || !Array.isArray(data.filenames)) {
+        return;
+    }
+
+    if (!Array.isArray(kind) || !kind.includes("cdylib")) {
         return;
     }
 
