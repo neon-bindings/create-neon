@@ -4,8 +4,8 @@
   "description": "Create Neon projects with zero configuration.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run cargo -- build --release",
-    "cargo": "node neon-cargo -o $npm_package_name=index.node --",
+    "build": "cargo build --message-format=json --release | npm run copy",
+    "copy": "node copy-rust-compiler-artifacts -o $npm_package_name=index.node",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
